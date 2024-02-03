@@ -1,31 +1,29 @@
 #!/bin/bash
 
-# First line of the script is the shebang which tells the system how to execute
+#welcome to 7 days bash scripting challenge :
 
-# Task  2: Echo
-echo "Scripting is fun with @TWS"
+echo "Hello i am taking the 7-day-bash-scripting-challenge and i am ready"
 
-# Task  3: Variables
-variable1="Hello"
-variable2="Bash"
+#Adding a variable which performs addition of two numbers
 
-# Task  4: Using Variables
-greeting="$variable1, $variable2!"
-echo "$greeting Welcome to the world of Bash scripting!"
+echo "please enter two numbers :"
 
-# Task  5: Using Built-in Variables
-echo "My current bash path - $BASH"
-echo "Bash version I am using - $BASH_VERSION"
-echo "PID of bash I am running - $$"
-echo "My home directory - $HOME"
-echo "Where am I currently? - $PWD"
-echo "My hostname - $HOSTNAME"
+read num1
+read num2
 
-# Task  6: Wildcards
-echo "Files with .txt extension in the current directory:"
-ls *.txt
+echo "The result is :" $((num1+num2))
 
+#using 3 built-in variales to show different tasks
 
+# 1 (location)
+echo "current location :" 
+pwd
 
-#Make sure to provide execution permission with the following command:
-#chmod +x day1_script.sh
+# 2 (date)
+echo "today is"
+date
+
+#3 (details of bash files created in user)
+echo "List of script files is listed below :"
+find ./*.sh
+
